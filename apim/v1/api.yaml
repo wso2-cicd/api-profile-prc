@@ -1,0 +1,119 @@
+type: api
+version: v4.5.0
+data:
+  id: 417e9492-245c-481d-a1b6-e23d3a7ce507
+  name: Profile Prc
+  context: /profile-prc
+  version: v1
+  provider: admin
+  lifeCycleStatus: PUBLISHED
+  responseCachingEnabled: false
+  cacheTimeout: 300
+  hasThumbnail: false
+  isDefaultVersion: false
+  isRevision: false
+  revisionId: 0
+  enableSchemaValidation: false
+  enableSubscriberVerification: false
+  type: HTTP
+  audiences:
+   - all
+  transport:
+   - http
+   - https
+  tags: []
+  policies:
+   - Platinum
+   - Unlimited
+   - Diamond
+  organizationPolicies: []
+  authorizationHeader: Authorization
+  apiKeyHeader: ApiKey
+  securityScheme:
+   - oauth_basic_auth_api_key_mandatory
+   - oauth2
+  visibility: PUBLIC
+  visibleRoles: []
+  visibleTenants: []
+  visibleOrganizations:
+   - none
+  mediationPolicies: []
+  apiPolicies:
+    request:
+     -
+      policyName: addQueryParam
+      policyVersion: v3
+      policyType: common
+      policyId: 340dfbda-cf61-41b7-8baf-42d7012d4e75
+      parameters:
+        paramKey: x
+        paramValue: "y"
+    response: []
+    fault: []
+  subscriptionAvailability: CURRENT_TENANT
+  subscriptionAvailableTenants: []
+  additionalProperties: []
+  additionalPropertiesMap: {}
+  accessControl: NONE
+  accessControlRoles: []
+  businessInformation: {}
+  corsConfiguration:
+    corsConfigurationEnabled: false
+    accessControlAllowOrigins:
+     - '*'
+    accessControlAllowCredentials: false
+    accessControlAllowHeaders:
+     - authorization
+     - Access-Control-Allow-Origin
+     - Content-Type
+     - SOAPAction
+     - apikey
+     - Internal-Key
+    accessControlAllowMethods:
+     - GET
+     - PUT
+     - POST
+     - DELETE
+     - PATCH
+     - OPTIONS
+  websubSubscriptionConfiguration:
+    enable: false
+    secret: ""
+    signingAlgorithm: SHA1
+    signatureHeader: x-hub-signature
+  createdTime: "1750360656234"
+  lastUpdatedTimestamp: "1750360746604"
+  lastUpdatedTime: 2025-06-19 15:19:06.604
+  endpointConfig:
+    endpoint_type: http
+    production_endpoints:
+      url: https://dev.x.com/mi/profile-prc/v1
+  endpointImplementationType: ENDPOINT
+  subtypeConfiguration:
+    subtype: DEFAULT
+  scopes: []
+  operations:
+   -
+    id: ""
+    target: "/accounts/{account-number}"
+    verb: GET
+    authType: Application & Application User
+    throttlingPolicy: Unlimited
+    scopes: []
+    usedProductIds: []
+    operationPolicies:
+      request: []
+      response: []
+      fault: []
+  categories: []
+  keyManagers:
+   - all
+  advertiseInfo:
+    advertised: false
+    apiOwner: admin
+    vendor: WSO2
+  gatewayVendor: wso2
+  gatewayType: wso2/synapse
+  asyncTransportProtocols: []
+  egress: false
+  organizationId: carbon.super

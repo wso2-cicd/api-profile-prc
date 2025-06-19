@@ -1,0 +1,51 @@
+environments:
+  - name: dev
+    configs:
+      endpoints:
+        production:
+          url: https://dev.x.com/mi/profile-prc/v1
+      deploymentEnvironments:
+        - displayOnDevportal: true
+          deploymentEnvironment: Default
+          deploymentVhost: localhost
+      policies:
+        - Gold
+
+  - name: qa
+    configs:
+      endpoints:
+        production:
+          url: https://qa.x.com/mi/profile-prc/v1
+      deploymentEnvironments:
+        - displayOnDevportal: true
+          deploymentEnvironment: Default
+          deploymentVhost: localhost
+      policies:
+        - Platinum
+
+  - name: uat
+    configs:
+      endpoints:
+        production:
+          url:https://uat.x.com/mi/profile-prc/v1
+      deploymentEnvironments:
+        - displayOnDevportal: true
+          deploymentEnvironment: Default
+          deploymentVhost: localhost
+      policies:
+        - Platinum
+        - Diamond
+
+  - name: prod
+    configs:
+      endpoints:
+        production:
+          url: https://x.com/mi/profile-prc/v1
+      deploymentEnvironments:
+        - displayOnDevportal: true
+          deploymentEnvironment: Default
+          deploymentVhost: localhost
+      policies:
+        - Platinum
+        - Diamond
+        - Unlimited

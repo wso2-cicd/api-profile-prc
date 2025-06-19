@@ -1,0 +1,7 @@
+deploy:
+  import:
+    preserveProvider: false
+    rotateRevision: true
+    update: true
+name: Profile Prc
+version: v1
