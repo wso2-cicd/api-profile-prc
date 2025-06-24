@@ -27,7 +27,7 @@ environments:
     configs:
       endpoints:
         production:
-          url:https://uat.x.com/mi/profile-prc/v1
+          url: https://uat.x.com/mi/profile-prc/v1
       deploymentEnvironments:
         - displayOnDevportal: true
           deploymentEnvironment: Default
