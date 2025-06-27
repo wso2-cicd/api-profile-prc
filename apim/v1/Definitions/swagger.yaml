@@ -12,7 +12,7 @@ paths:
   /accounts/{account-number}:
     get:
       summary: Get Account by Account Number
-      description: Get Account by Account Number.
+      description: Get Account by Account Numbe.
       parameters:
        -
         name: account-number
